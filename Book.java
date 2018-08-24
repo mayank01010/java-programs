@@ -12,11 +12,11 @@ class Book
        System.out.println("Enter the book prize\t");
        bprize=s1.nextFloat();
        System.out.println("Enter the book Name\t");
-       bname=s1.nextLine();
+       bname=s1.next();
        System.out.println("Enter the Author Name\t");
-       aname=s1.nextLine();
+       aname=s1.next();
        System.out.println("Enter the Publication Name\t");
-       pname=s1.nextLine();
+       pname=s1.next();
        
      } 
     void display()
@@ -33,11 +33,8 @@ class Book
       for(int i=0;i<n;i++)
       {
          a[i]=new Book();  
-       }   
-       for(int i=0;i<n;i++)
-      {
          a[i].getdata();  
-       }  
+       } 
       System.out.println("\t"+"book_no"+"\t"+"bname"+"\t"+"aname"+"\t"+"bprize"+"\t"+"pname");  
        for(int i=0;i<n;i++)
       {
